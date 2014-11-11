@@ -1,4 +1,4 @@
-=== Uber City Collector
+# Uber City Collector
 
 Scrapes information from Uber.com's list of current cities and stores it in JSON files for further processing.
 
