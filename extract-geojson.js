@@ -6,7 +6,7 @@ fs.readdir('./cities', function(err, files) {
             var basename = filename.replace(/\.json/, '');
             var data = JSON.parse(data);
             if (data.geojson !== null) {
-                fs.writeFile('geojson/' + basename + '.geojson', JSON.stringify(data.geojson));
+                fs.writeFile('geojson/' + basename + '.geojson', data.geojson);
             }
             else {
                 console.log('- bad geojson for ' + filename + ', creating from bounding box instead');
